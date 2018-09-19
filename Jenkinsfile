@@ -15,7 +15,10 @@ pipeline {
           git 'https://github.com/Mavesis/js-exmplae-project.git'
         }
       }
-      stage('FASE 2: BUILD'){}
+      stage('FASE 2: BUILD'){
+          steps{      
+           }
+      }
       stage('FASE 2: ANALYSIS'){
         steps{
           echo'           ------------------------------------------------  COMENZANDO ANÁLISIS DEL PROYECTO   ------------------------------------------------                        '
