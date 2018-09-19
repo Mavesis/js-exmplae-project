@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
      def scannerHome = tool 'SonarQube 3.2'
-     def analisis =scannerHome+"/bin/sonar-scanner -Dsonar.projectKey=ProyectoJS -Dsonar.organization=mavesis-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=39acfca66c299343b8ac4427b69b5cb78db97cf1 -Dsonar.branch.name="+BRANCH_NAME
+     def analisis =scannerHome+'/bin/sonar-scanner -Dsonar.projectKey=ProyectoJS -Dsonar.organization=mavesis-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=39acfca66c299343b8ac4427b69b5cb78db97cf1 -Dsonar.branch.name='+BRANCH_NAME
    }
   stages {
       stage('FASE 1 SMC '){
