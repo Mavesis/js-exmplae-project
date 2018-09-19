@@ -20,7 +20,7 @@ pipeline {
       stage('FASE 2 ANALYSIS JS '){
         steps{
           echo'           ------------------------------------------------  COMENZANDO ANÁLISIS DEL PROYECTO   ------------------------------------------------                        '
-          echo $scannerHome
+          echo scannerHome
           echo BRANCH_NAME
           
           withSonarQubeEnv('local_sonar'){
