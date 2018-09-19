@@ -17,6 +17,7 @@ pipeline {
       }
       stage('FASE 2: BUILD'){
           steps{      
+            echo' Es un proyecto JS, no necesita compilación '
            }
       }
       stage('FASE 2: ANALYSIS'){
