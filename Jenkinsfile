@@ -25,7 +25,7 @@ pipeline {
           
           withSonarQubeEnv('local_sonar'){
             
-            bat ("${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ProyectoJS -Dsonar.organization=mavesis-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=39acfca66c299343b8ac4427b69b5cb78db97cf1 -Dsonar.branch.name=${BRANCH_NAME}")
+            bat ('"${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ProyectoJS -Dsonar.organization=mavesis-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=39acfca66c299343b8ac4427b69b5cb78db97cf1 -Dsonar.branch.name=${BRANCH_NAME}"')
           }
         }
       }
