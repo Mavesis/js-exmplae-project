@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 14px;
+  height: 30px;
+  padding: 0 12px;
+  font-family: 'Open Sans', Tahoma, sans-serif;
+}
+
+input, textarea {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+}
+
+select {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+  border: 0;
+  background-color: var(--light-color);
+  margin-bottom: 5px;
+}

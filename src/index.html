@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <!-- build:css -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div id="feedback" class="feedback"></div>
+
+    <header class="title-section">
+      <div class="content row-distribute-items">
+        <h1 class="title-section__title">Lista</h1>
+        <button class="title-section__button" id="add-new">Nuevo</button>
+      </div>
+    </header>
+
+    <section class="add-section hidden" id="add-section">
+      <div class="content">
+        <form class="form" id="form">
+          <input type="text" class="add-section__control" id="title" placeholder="Título">
+          <textarea id="description" class="add-section__control" placeholder="Descripción" rows="3"></textarea>
+          <button type="submit" class="add-section__button" id="add-element">Añadir</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div class="content">
+        Ordenar por
+        <select name="sort" id="sort">
+          <option value="title">Título</option>
+          <option value="date">Fecha</option>
+          <option value="description">Description</option>
+        </select>
+        <div class="column-distribute-items" id="boxes"></div>
+      </div>
+    </section>
+
+    <!-- build:js -->
+    <!-- endbuild -->
+  </body>
+</html>

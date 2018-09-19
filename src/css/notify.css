@@ -1,0 +1,28 @@
+.feedback {
+  width: 20%;
+  left: 40%;
+  top: -200px;
+  position: absolute;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feedback-animation {
+  animation: 4s move_eye forwards;
+}
+
+.feedback-ok {
+  background-color: lightgreen;
+}
+
+.feedback-error {
+  background-color: red;
+}
+
+@keyframes move_eye {
+  0% { top: -200px; }
+  20% { top: 30px; }
+  80% { top: 30px; }
+  100% { top: -200px; }
+}
